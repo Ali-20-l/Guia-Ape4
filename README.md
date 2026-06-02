@@ -1,111 +1,75 @@
-# APE 4 — Grafos: Mapa del Campus UTA
+# 📘 Práctica de Estructuras de Datos - Grafos
 
-## Estructura de Datos — Universidad Técnica de Ambato
+**Universidad Técnica de Ambato**  
+Ingeniería en Sistemas, Electrónica e Industrial  
+Software - Tercero  
 
-### Objetivo
-
-Implementar un grafo usando lista de adyacencia para representar rutas dentro del Campus Huachi de la UTA y comparar los algoritmos BFS y Dijkstra.
-
----
-
-# Actividades a realizar
-
-Complete los métodos marcados con `TODO` dentro del archivo:
-
-```bash
-APE4_Grafos.java
-```
-
-Los métodos a completar son:
-
-* `agregarNodo()`
-* `agregarArista()`
-* `bfs()`
-* `dijkstra()`
+**Nombre:** Alina Ortiz  
 
 ---
 
-# Instrucciones
+##  Objetivos
 
-1. NO modificar la estructura principal del programa.
-2. Completar únicamente las secciones marcadas con `TODO`.
-3. Compilar y ejecutar el programa correctamente.
-4. Comparar los resultados obtenidos entre:
+### General
+Desarrollar habilidades en el trabajo con estructuras de datos tipo grafo.
 
-   * BFS (menos paradas)
-   * Dijkstra (menor distancia)
-5. Código comentado
----
+### Específicos
 
-# Evidencias requeridas
-
-Tomar capturas de pantalla de:
-
-* Código funcionando
-* Consola ejecutando el programa
-* Resultados de BFS
-* Resultados de Dijkstra
+1. Implementar grafos usando listas de adyacencia en Java.
+2. Aplicar algoritmos BFS y Dijkstra para búsqueda de rutas.
+3. Analizar rutas dentro de un entorno universitario.
 
 ---
 
-# Entrega en GitHub
+##  Descripción
 
-Subir el proyecto completo a GitHub con la siguiente estructura:
+Este proyecto implementa un grafo en Java donde los nodos representan lugares del campus universitario y las aristas representan conexiones entre ellos con un peso asociado.
 
-```text
-Proyecto_APE4/
-│
-├── src/
-│   └── APE4_Grafos.java
-│
-├── capturas/
-│   ├── captura1.png
-│   ├── captura2.png
-│   └── captura3.png
-│
-└── README.md
-```
+Se utilizan dos algoritmos principales:
+
+- **BFS:** encuentra la ruta con menos nodos.
+- **Dijkstra:** encuentra la ruta con menor peso total.
 
 ---
 
-# Compilación y ejecución
+## 📁 Estructura del proyecto
+Guia_Ape4_Grafos
+└── APE4_Grafos.java
 
-## Compilar
+---
+
+## 🧠 Algoritmos
+
+| Algoritmo | Función |
+| ---------- | ------- |
+| BFS        | Busca la ruta con menos pasos |
+| Dijkstra   | Busca la ruta más corta según peso |
+
+---
+
+## 🏫 Nodos del grafo
+
+UTA, Contabilidad, Complejo Universitario, Civil, Facultad de Alimentos, Comedor.
+
+---
+
+## 🛣️ Ejemplo de ruta
+
+UTA → Contabilidad → Complejo Universitario → Civil → Facultad de Alimentos
+
+---
+
+## 📈 Conclusiones
+
+- Los grafos permiten modelar rutas reales.
+- BFS trabaja por niveles sin considerar pesos.
+- Dijkstra calcula la ruta óptima con pesos.
+- Java facilita su implementación con estructuras dinámicas.
+
+---
+
+## 💻 Ejecución
 
 ```bash
 javac APE4_Grafos.java
-```
-
-## Ejecutar
-
-```bash
 java APE4_Grafos
-```
-
----
-
-# Conceptos importantes
-
-## BFS
-
-Busca la ruta con menos nodos intermedios.
-
-## Dijkstra
-
-Busca la ruta con menor distancia total.
-
-## Lista de adyacencia
-
-Representa para cada nodo una lista de vecinos conectados.
-
----
-
-# Resultados esperados
-
-El estudiante desarrollará habilidades para:
-
-* representar problemas reales mediante grafos,
-* implementar lista de adyacencia,
-* comprender BFS y Dijkstra,
-* calcular rutas entre ubicaciones,
-* analizar diferencias entre algoritmos de búsqueda.
